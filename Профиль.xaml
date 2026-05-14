@@ -1,0 +1,118 @@
+﻿<Page x:Class="реклама.Профиль"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d"
+      Title="Профиль"
+      Background="#F5F7FA">
+
+    <Grid>
+
+        <Border Width="350"
+                Padding="25"
+                Background="White"
+                CornerRadius="15"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center">
+
+            <StackPanel>
+
+                <Border Width="130"
+                        Height="130"                     
+                        BorderThickness="3"
+                        BorderBrush="#4A90E2"
+                        HorizontalAlignment="Center"
+                        Margin="0,0,0,15">
+
+                    <Image x:Name="profileImage"
+                           Stretch="Fill">
+                        <Image.Clip>
+                            <EllipseGeometry Center="65,65"
+                                             RadiusX="65"
+                                             RadiusY="65"/>
+                        </Image.Clip>
+                    </Image>
+                </Border>
+
+                <Button Content="Изменить фото"
+                        Width="140"
+                        Height="35"
+                        Margin="0,0,0,20"
+                        Background="#4A90E2"
+                        Foreground="White"
+                        BorderThickness="0"
+                        Cursor="Hand"
+                        Click="ChangePhoto_Click"/>
+                
+                <StackPanel x:Name="info">
+
+                    <TextBlock Text="Логин"
+                               FontWeight="Bold"/>
+                    <TextBlock x:Name="login"
+                               Margin="0,5,0,15"
+                               FontSize="15"/>
+
+                    <TextBlock Text="ФИО"
+                               FontWeight="Bold"/>
+                    <TextBlock x:Name="fio"
+                               Margin="0,5,0,15"
+                               FontSize="15"/>
+
+                    <TextBlock Text="Почта"
+                               FontWeight="Bold"/>
+                    <TextBlock x:Name="email"
+                               Margin="0,5,0,15"
+                               FontSize="15"/>
+
+                    <TextBlock Text="Пароль"
+                               FontWeight="Bold"/>
+                    <TextBlock x:Name="password"
+                               Margin="0,5,0,20"
+                               FontSize="15"/>
+
+                    <Button Content="Редактировать"
+                            Height="40"
+                            Background="#4A90E2"
+                            Foreground="White"
+                            BorderThickness="0"
+                            Cursor="Hand"
+                            Click="Button_Click"/>
+                </StackPanel>
+
+                <StackPanel x:Name="edit"
+                            Visibility="Collapsed">
+
+                    <TextBlock Text="Логин"/>
+                    <TextBox x:Name="elogin"
+                             Height="35"
+                             Margin="0,5,0,10"/>
+
+                    <TextBlock Text="ФИО"/>
+                    <TextBox x:Name="efio"
+                             Height="35"
+                             Margin="0,5,0,10"/>
+
+                    <TextBlock Text="Почта"/>
+                    <TextBox x:Name="eemail"
+                             Height="35"
+                             Margin="0,5,0,10"/>
+
+                    <TextBlock Text="Пароль"/>
+                    <TextBox x:Name="epassword"
+                             Height="35"
+                             Margin="0,5,0,20"/>
+
+                    <Button Content="Сохранить"
+                            Height="40"
+                            Background="#27AE60"
+                            Foreground="White"
+                            BorderThickness="0"
+                            Cursor="Hand"
+                            Click="Button_Click_1"/>
+                </StackPanel>
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

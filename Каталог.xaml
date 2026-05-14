@@ -1,0 +1,249 @@
+﻿<Page x:Class="реклама.Каталог"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d"
+      Title="Каталог"
+      Background="#0F172A">
+
+    <Grid Margin="20">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Margin="0,0,0,25">
+
+            <TextBlock Text="Каталог услуг"
+                       FontSize="32"
+                       FontWeight="Bold"
+                       Foreground="White"
+                       HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Выберите нужную услугу"
+                       FontSize="15"
+                       Foreground="#94A3B8"
+                       HorizontalAlignment="Center"
+                       Margin="0,5,0,0"/>
+        </StackPanel>
+
+        <WrapPanel Grid.Row="1"
+                   HorizontalAlignment="Center">
+
+            <Border Width="220"
+                    Height="320"
+                    Margin="10"
+                    Background="#1E293B"
+                    CornerRadius="15">
+
+                <StackPanel Margin="15">
+
+
+
+                    <TextBlock Text="Финансовые решения"
+                               FontSize="24"
+                               FontWeight="Bold"
+                               Foreground="White"
+                               HorizontalAlignment="Center"
+                               Margin="0,10" TextWrapping="Wrap" VerticalAlignment="Center" TextAlignment="Center"/>
+
+                    <TextBlock Text="в этом разделе представлены все основные услуги банка — от открытия счета до кредитования и инвестирования. Здесь можно легко найти нужную услугу и ознакомиться с условиями."
+                               TextWrapping="Wrap"
+                               Foreground="#CBD5E1"
+                               TextAlignment="Center"
+                               Height="60"/>
+
+                    <TextBlock Text="50 000 ₽"
+                               FontSize="24"
+                               FontWeight="Bold"
+                               Foreground="#38BDF8"
+                               HorizontalAlignment="Center"
+                               Margin="0,20"/>
+
+                    <Button Content="В корзину"
+                            Height="40"
+                            Background="#2563EB"
+                            Foreground="White"
+                            BorderThickness="0"
+                            Cursor="Hand"
+                            FontWeight="Bold"
+                            Click="Button_Click">
+
+                        <Button.Style>
+                            <Style TargetType="Button">
+
+                                <Setter Property="Template">
+                                    <Setter.Value>
+
+                                        <ControlTemplate TargetType="Button">
+
+                                            <Border Background="{TemplateBinding Background}"
+                                                    CornerRadius="10">
+
+                                                <ContentPresenter HorizontalAlignment="Center"
+                                                                  VerticalAlignment="Center"/>
+
+                                            </Border>
+
+                                        </ControlTemplate>
+
+                                    </Setter.Value>
+                                </Setter>
+
+                            </Style>
+                        </Button.Style>
+
+                    </Button>
+
+                </StackPanel>
+            </Border>
+
+            <Border Width="220"
+                    Height="320"
+                    Margin="10"
+                    Background="#1E293B"
+                    CornerRadius="15">
+
+                <StackPanel Margin="15">
+
+
+
+                    <TextBlock Text="Стоимость услуг"
+                               FontSize="24"
+                               FontWeight="Bold"
+                               Foreground="White"
+                               HorizontalAlignment="Center"
+                               
+                               Margin="0,10" TextWrapping="Wrap" VerticalAlignment="Center" TextAlignment="Center"/>
+
+                    <TextBlock Text="таблица с актуальными ценами на различные банковские продукты и услуги: обслуживание счетов, переводы, кредиты, карты и т. д., с подробным описанием тарифов и условий."
+                               TextWrapping="Wrap"
+                               Foreground="#CBD5E1"
+                               FontSize="14"
+                               TextAlignment="Center"
+                               Height="60"/>
+
+                    <TextBlock Text="67 890 ₽"
+                               FontSize="24"
+                               FontWeight="Bold"
+                               Foreground="#38BDF8"
+                               HorizontalAlignment="Center"
+                               Margin="0,20"/>
+
+                    <Button Content="В корзину"
+                            Height="40"
+                            Background="#2563EB"
+                            Foreground="White"
+                            BorderThickness="0"
+                            Cursor="Hand"
+                            FontWeight="Bold"
+                            Click="Button_Click_1">
+
+                        <Button.Style>
+                            <Style TargetType="Button">
+
+                                <Setter Property="Template">
+                                    <Setter.Value>
+
+                                        <ControlTemplate TargetType="Button">
+
+                                            <Border Background="{TemplateBinding Background}"
+                                                    CornerRadius="10">
+
+                                                <ContentPresenter HorizontalAlignment="Center"
+                                                                  VerticalAlignment="Center"/>
+
+                                            </Border>
+
+                                        </ControlTemplate>
+
+                                    </Setter.Value>
+                                </Setter>
+
+                            </Style>
+                        </Button.Style>
+
+                    </Button>
+
+                </StackPanel>
+            </Border>
+
+            <Border Width="220"
+                    Height="320"
+                    Margin="10"
+                    Background="#1E293B"
+                    CornerRadius="15">
+
+                <StackPanel Margin="15">
+
+
+                    <TextBlock Text="Корпоративный банкинг"
+                               FontSize="20"
+                               TextWrapping="Wrap"
+                               FontWeight="Bold"
+                               Foreground="White"
+                               HorizontalAlignment="Center"
+                               Margin="0,10" Width="183" TextAlignment="Center"/>
+
+                    <TextBlock Text="специальный раздел для корпоративных клиентов — услуги по корпоративным счетам, финансированию бизнеса, валютным операциям и управлению активами.
+
+            
+        "
+                               TextWrapping="Wrap"
+                               Foreground="#CBD5E1"
+                               FontSize="14"
+                               TextAlignment="Center"
+                               Height="60"/>
+
+                    <TextBlock Text="65 000 ₽"
+                               FontSize="24"
+                               FontWeight="Bold"
+                               Foreground="#38BDF8"
+                               HorizontalAlignment="Center"
+                               Margin="0,20"/>
+
+                    <Button Content="В корзину"
+                            Height="40"
+                            Background="#2563EB"
+                            Foreground="White"
+                            BorderThickness="0"
+                            Cursor="Hand"
+
+                            FontWeight="Bold"
+                            Click="Button_Click_2">
+
+                        <Button.Style>
+                            <Style TargetType="Button">
+
+                                <Setter Property="Template">
+                                    <Setter.Value>
+
+                                        <ControlTemplate TargetType="Button">
+
+                                            <Border Background="{TemplateBinding Background}"
+                                                    CornerRadius="10">
+
+                                                <ContentPresenter HorizontalAlignment="Center"
+                                                                  VerticalAlignment="Center"/>
+
+                                            </Border>
+
+                                        </ControlTemplate>
+
+                                    </Setter.Value>
+                                </Setter>
+
+                            </Style>
+                        </Button.Style>
+
+                    </Button>
+
+                </StackPanel>
+            </Border>
+
+        </WrapPanel>
+
+    </Grid>
+</Page>

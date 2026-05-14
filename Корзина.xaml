@@ -1,0 +1,143 @@
+﻿<Page x:Class="реклама.Корзина"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d"
+      Title="Корзина"
+      Background="#0F172A">
+
+    <Grid Margin="25">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+  
+        <StackPanel Grid.Row="0"
+                    Margin="0,0,0,25">
+
+            <TextBlock Text="Корзина"
+                       FontSize="36"
+                       FontWeight="Bold"
+                       Foreground="White"/>
+
+            <TextBlock Text="Ваши выбранные услуги"
+                       FontSize="16"
+                       Foreground="#94A3B8"
+                       Margin="0,5,0,0"/>
+        </StackPanel>
+
+        <Border Grid.Row="1"
+                Background="#111827"
+                CornerRadius="18"
+                Padding="20">
+
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+
+                <StackPanel x:Name="korz"/>
+
+            </ScrollViewer>
+        </Border>
+
+        <Border Grid.Row="2"
+                Background="#111827"
+                CornerRadius="18"
+                Padding="20"
+                Margin="0,20,0,0">
+
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Orientation="Horizontal"
+                            VerticalAlignment="Center">
+
+                    <TextBlock Text="Итого:"
+                               FontSize="28"
+                               FontWeight="Bold"
+                               Foreground="White"/>
+
+                    <TextBlock x:Name="price"
+                               FontSize="28"
+                               FontWeight="Bold"
+                               Foreground="#38BDF8"
+                               Margin="15,0,0,0"/>
+                </StackPanel>
+
+                <Button Grid.Column="1"
+                        Width="180"
+                        Height="55"
+                        FontSize="20"
+                        FontWeight="Bold"
+                        Background="#10B981"
+                        Foreground="White"
+                        BorderThickness="0"
+                        Cursor="Hand"
+                        Content="Купить"
+                        Click="Buy_Click">
+
+                    <Button.Style>
+
+                        <Style TargetType="Button">
+
+                            <Setter Property="Template">
+
+                                <Setter.Value>
+
+                                    <ControlTemplate TargetType="Button">
+
+                                        <Border x:Name="border"
+                                                Background="{TemplateBinding Background}"
+                                                CornerRadius="12">
+
+                                            <ContentPresenter HorizontalAlignment="Center"
+                                                              VerticalAlignment="Center"/>
+
+                                        </Border>
+
+                                        <ControlTemplate.Triggers>
+
+                                            <Trigger Property="IsMouseOver"
+                                                     Value="True">
+
+                                                <Setter TargetName="border"
+                                                        Property="Background"
+                                                        Value="#059669"/>
+
+                                            </Trigger>
+
+                                            <Trigger Property="IsPressed"
+                                                     Value="True">
+
+                                                <Setter TargetName="border"
+                                                        Property="Background"
+                                                        Value="#047857"/>
+
+                                            </Trigger>
+
+                                        </ControlTemplate.Triggers>
+
+                                    </ControlTemplate>
+
+                                </Setter.Value>
+
+                            </Setter>
+
+                        </Style>
+
+                    </Button.Style>
+
+                </Button>
+
+            </Grid>
+
+        </Border>
+
+    </Grid>
+</Page>
