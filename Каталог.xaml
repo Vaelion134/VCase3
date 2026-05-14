@@ -125,12 +125,12 @@
                                TextAlignment="Center"
                                Height="60"/>
 
-                    <TextBlock Text="67 890 ₽"
+                    <TextBlock
                                FontSize="24"
                                FontWeight="Bold"
                                Foreground="#38BDF8"
                                HorizontalAlignment="Center"
-                               Margin="0,20"/>
+                               Margin="0,20"><Run Language="ru-ru" Text="32 811"/><Run Text=" ₽"/></TextBlock>
 
                     <Button Content="В корзину"
                             Height="40"
@@ -197,12 +197,12 @@
                                TextAlignment="Center"
                                Height="60"/>
 
-                    <TextBlock Text="65 000 ₽"
+                    <TextBlock
                                FontSize="24"
                                FontWeight="Bold"
                                Foreground="#38BDF8"
                                HorizontalAlignment="Center"
-                               Margin="0,20"/>
+                               Margin="0,20"><Run Language="ru-ru" Text="35 000"/><Run Text=" ₽"/></TextBlock>
 
                     <Button Content="В корзину"
                             Height="40"
